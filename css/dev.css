@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'dream';
+    src: url('../fontes/Daydream.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'ranker';
+    src: url('../fontes/m20.TTF') format('opentype');
+}
+@font-face {
+    font-family: 'classica';
+    src: url('../fontes/Classica-Book.ttf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to top, rgb(148, 148, 148), rgb(40, 40, 255));
+}
+
+body {
+    background-color: rgb(148, 148, 148);
+}
+
+header div {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'ranker';
+}
+
+.tec:hover, .dev:hover, .contato:hover {
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 5px #CCC;
+}
+
+header h1 {
+    font-family: 'dream';
+    text-align: center;
+    padding-top: 15px; 
+    padding-bottom: 10px; 
+    font-size: 30px;  
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px #afafaf94;
+}
+
+header p {
+    font-family: 'ranker';
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    text-shadow: 0 2px 5px #afafaf5d;
+}
+
+main {
+    width: 500px;
+    margin-left: 450px;
+    margin-top: 80px;
+}
+
+main h1 {
+    font-family: 'ranker';
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main p {
+    font-family: 'classica';
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.back {
+    margin-top: 20px;
+    margin-left: 655px;
+}
+
+@media(max-width: 430px) {
+    header {
+        width: 440px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    .tec, .dev, .contato {
+        font-size: 16px;
+    }
+
+    main {
+        margin-left: 40px;
+        width: 350px;
+    }
+
+    .back {
+        margin-left: 185px;
+    }
+}

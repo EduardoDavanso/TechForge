@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'dream';
+    src: url('../fontes/Daydream.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'ranker';
+    src: url('../fontes/m20.TTF') format('opentype');
+}
+@font-face {
+    font-family: 'classica';
+    src: url('../fontes/Classica-Book.ttf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to top, rgb(148, 148, 148), rgb(40, 40, 255));
+}
+
+body {
+    background-color: rgb(148, 148, 148);
+}
+
+header div {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-family: 'ranker';
+}
+
+.tec:hover, .dev:hover, .contato:hover {
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 5px #CCC;
+}
+
+header h1 {
+    font-family: 'dream';
+    text-align: center;
+    padding-top: 15px; 
+    padding-bottom: 10px; 
+    font-size: 30px;  
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px #afafaf94;
+}
+
+header p {
+    font-family: 'ranker';
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    text-shadow: 0 2px 5px #afafaf5d;
+}
+
+main {
+   
+    width: 700px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+li {
+    margin-left: 30px;
+    font-family: 'classica';
+}
+
+main h1, h2 {
+    font-family: 'ranker';
+    text-align: center;
+    margin: 10px;
+}
+
+main p {
+    font-family: 'classica';
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.controle {
+    margin-left: 90px;
+}
+
+.metal {
+    margin-left: 190px;
+}
+
+.metal a:hover {
+    color: red;
+}
+
+.metalimg {
+    width: 60%;
+    margin-left: 140px;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.61);
+}
+
+.templatep {
+    margin-left: 140px;
+}
+
+section {
+    margin-left: 200px;
+}
+
+section img {
+    height: 100px;
+}
+
+.back {
+    margin-left: 655px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 430px) {
+    header {
+        width:430px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    .tec, .dev, .contato {
+        font-size: 13px;
+    }
+
+    main {
+        width: 430px
+    }
+
+    .metal {
+        margin-left : 8px;
+    }
+
+    .controle {
+        margin-left: 8px;
+    }
+
+    .metalimg {
+        margin-left: 90px;
+    }
+
+    .templatep {
+        margin-left: 8px;
+    }
+
+    section {
+        margin-left: 70px;
+    }
+
+    section img {
+        height: 100px;
+    }
+
+    .back {
+        margin-left:185px;
+    }
+}
